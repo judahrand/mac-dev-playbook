@@ -57,6 +57,7 @@ homebrew_installed_packages:
   - readline
   - sqlite
   - sqlite3
+  - starship
   - tcl-tk
   - wget
   - xz
