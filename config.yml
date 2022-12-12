@@ -9,12 +9,16 @@ configure_macos: true
 configure_dock: true
 dockitems_remove: []
 dockitems_persist:
-  - Finder
-  - Launchpad
-  - System Preferences
-  - Google Chrome
-  - Slack
-  - Visual Studio Code
+  - name: Launchpad
+    path: /Applications/Launchpad.app
+  - name: System Preferences
+    path: /Applications/System Preferences.app
+  - name: Google Chrome
+    path: /Applications/Google Chrome.app
+  - name: Slack
+    path: /Applications/Slack.app
+  - name: Visual Studio Code
+    path: /Applications/Visual Studio Code.app
 
 configure_sudoers: true
 sudoers_custom_config: |
@@ -49,7 +53,7 @@ homebrew_installed_packages:
   - tcl-tk
   - wget
   - xz
-  - zlib 
+  - zlib
 
 homebrew_taps:
   - buo/cask-upgrade
