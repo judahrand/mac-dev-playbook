@@ -45,6 +45,7 @@ homebrew_installed_packages:
   - coreutils
   - findutils
   - fish
+  - fisher
   - gettext
   - gh
   - git
