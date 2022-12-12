@@ -40,11 +40,14 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - bat
   - brew-cask-completion
   - coreutils
+  - fd
   - findutils
   - fish
   - fisher
+  - fzf
   - gettext
   - gh
   - git
