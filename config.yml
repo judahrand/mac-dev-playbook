@@ -21,6 +21,8 @@ dockitems_persist:
     path: /Applications/Slack.app
   - name: Visual Studio Code
     path: /Applications/Visual Studio Code.app
+  - name: Hyper
+    path: /Applications/Hyper.app
 
 configure_sudoers: true
 sudoers_custom_config: |
