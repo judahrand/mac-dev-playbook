@@ -23,6 +23,8 @@ dockitems_persist:
     path: /Applications/Microsoft Teams.app
   - name: Microsoft Outlook
     path: /Applications/Microsoft Outlook.app
+  - name: Hyper
+    path: /Applications/Hyper.app
 
 configure_sudoers: true
 sudoers_custom_config: |
@@ -57,7 +59,7 @@ homebrew_installed_packages:
   - tcl-tk
   - wget
   - xz
-  - zlib 
+  - zlib
 
 homebrew_taps:
   - buo/cask-upgrade
