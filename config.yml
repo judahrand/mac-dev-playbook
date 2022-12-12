@@ -28,8 +28,8 @@ dockitems_persist:
 
 configure_sudoers: true
 sudoers_custom_config: |
-  # Allow users in admin group to use sudo with no password.
-  %admin ALL=(ALL) NOPASSWD: ALL
+  # Allow user cache sudo for 1 minute
+  Defaults:Judah.Rand timestamp_timeout=1
 
 dotfiles_repo: https://github.com/judahrand/dotfiles.git
 dotfiles_repo_version: main
