@@ -1,0 +1,108 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: true
+configure_terminal: true
+configure_macos: true
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: true
+dockitems_remove: []
+dockitems_persist:
+  - Finder
+  - Launchpad
+  - System Preferences
+  - Google Chrome
+  - Slack
+  - Visual Studio Code
+
+configure_sudoers: true
+sudoers_custom_config: |
+  # Allow users in admin group to use sudo with no password.
+  %admin ALL=(ALL) NOPASSWD: ALL
+
+dotfiles_repo: https://github.com/judahrand/dotfiles.git
+dotfiles_repo_version: main
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_files:
+  - .macos
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - brew-cask-completion
+  - coreutils
+  - findutils
+  - fish
+  - gettext
+  - gh
+  - git
+  - go
+  - gpg
+  - mas
+  - openssl
+  - pipx
+  - pyenv
+  - readline
+  - sqlite
+  - sqlite3
+  - tcl-tk
+  - wget
+  - xz
+  - zlib 
+
+homebrew_taps:
+  - buo/cask-upgrade
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-drivers
+  - homebrew/cask-versions
+  - homebrew/services
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - 1password
+  - alfred
+  - bartender
+  - google-chrome
+  - hyper
+  - logitech-options
+  - slack
+  - spotify
+  - visual-studio-code
+  - whatsapp
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps: []
+mas_email: ""
+mas_password: ""
+
+macos_script: "~/.macos --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages: []
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+pipx_packages:
+  - name: poetry
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
