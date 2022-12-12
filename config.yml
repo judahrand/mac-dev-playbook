@@ -82,6 +82,7 @@ homebrew_cask_apps:
   - hyper
   - logitech-options
   - microsoft-office
+  - microsoft-teams
   - slack
   - spotify
   - visual-studio-code
