@@ -119,6 +119,9 @@ pip_packages: []
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
 pipx_packages:
+  - name: databricks-cli
+  - name: dbx
+  - name: mlflow
   - name: poetry
 # - name: mkdocs
 #   state: present # present/absent/latest, default: present
