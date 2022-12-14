@@ -32,7 +32,7 @@ sudoers_custom_config: |
 dotfiles_repo: https://github.com/judahrand/dotfiles.git
 dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Development/GitHub/judahrand/dotfiles
 dotfiles_files:
   - .config
   - .hyper.js
