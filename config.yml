@@ -60,6 +60,7 @@ homebrew_installed_packages:
   - mas
   - openssl
   - pipx
+  - pre-commit
   - pyenv
   - readline
   - sqlite
