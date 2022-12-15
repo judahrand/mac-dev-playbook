@@ -90,6 +90,7 @@ homebrew_cask_apps:
   - logitech-options
   - microsoft-office
   - microsoft-teams
+  - miro
   - slack
   - spotify
   - visual-studio-code
