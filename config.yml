@@ -58,6 +58,7 @@ homebrew_installed_packages:
   - go
   - gpg
   - mas
+  - npm
   - openssl
   - pipx
   - pre-commit
