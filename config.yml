@@ -64,6 +64,7 @@ homebrew_installed_packages:
   - pre-commit
   - pyenv
   - readline
+  - sops
   - sqlite
   - sqlite3
   - starship
